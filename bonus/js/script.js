@@ -1,6 +1,9 @@
 alert('inserici i dati per sapere il prezzo del biglietto');
-var age = prompt('quanti anni hai?');
+var age = prompt('quando sei nato?');
 var km = prompt('quanti chilometri vuoi fare?');
+var d = new Date();
+
+age = d.getFullYear() -  parseInt(age)
 
 if (parseInt(age) < 18) {
     var discount = 20;
